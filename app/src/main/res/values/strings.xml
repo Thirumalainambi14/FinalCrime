@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CrimeBit</string>
+    <string name="button_Victim">Victim</string>
+    <string name="button_Police">Police</string>
+    <string name="Heading">Login Page</string>
+    <string name="editTextName">Username</string>
+    <string name="editTextPassword">Password</string>
+    <string name="buttonLogin">Login</string>
+    <string name="textViewInfo">No Of Attempts Remaining:5</string>
+</resources>
