@@ -7,4 +7,7 @@
     <string name="editTextPassword">Password</string>
     <string name="buttonLogin">Login</string>
     <string name="textViewInfo">No Of Attempts Remaining:5</string>
+    <string name="button_FileComplaint">File a Complaint</string>
+    <string name="button_Filedcomplaint">Complaints Filed</string>
+    <string name="button_Complaintstatus">Complaint Status</string>
 </resources>

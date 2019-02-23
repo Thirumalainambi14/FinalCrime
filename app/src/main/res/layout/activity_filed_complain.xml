@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".filedComplain">
 
+    <TextView
+        android:id="@+id/display_message"
+        android:layout_width="176dp"
+        android:layout_height="63dp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="104dp" />
 </android.support.constraint.ConstraintLayout>

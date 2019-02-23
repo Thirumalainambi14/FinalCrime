@@ -40,7 +40,7 @@ public class VictimLogin extends AppCompatActivity {
     {
         if((userName.equals("thiru") && userPassword.equals("12345")))
         {
-            Intent intent = new Intent(VictimLogin.this,Option.class);
+            Intent intent = new Intent(VictimLogin.this,Victim_main_page.class);
             //Intent is used to move from one activity to another
             startActivity(intent);
         }
