@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fileComplaint">
+
+
+    <TextView
+        android:id="@+id/policetext"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="16dp"
+        android:text="Near police Station"
+        app:layout_constraintBottom_toTopOf="@+id/subjectText"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="subject"
+
+        app:layout_constraintBottom_toTopOf="@+id/nametext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/policetext" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="name:"
+
+        app:layout_constraintBottom_toTopOf="@+id/emailtext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectText" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="email :"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+
+        android:text="address"
+        app:layout_constraintBottom_toTopOf="@id/adharno"
+        app:layout_constraintEnd_toStartOf="@+id/editText7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+    <TextView
+        android:id="@+id/adharno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="adhar no"
+        app:layout_constraintBottom_toTopOf="@+id/complaint"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/complaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="complaints"
+        app:layout_constraintBottom_toTopOf="@+id/button_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/adharno" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:onClick="sendMessage"
+        android:text="REGISTER"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complaint" />
+
+    <Spinner
+        android:id="@+id/Spinnerid"
+        android:layout_width="181dp"
+        android:layout_height="32dp"
+
+        android:layout_marginTop="48dp"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toRightOf="@+id/policetext"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/Subject_edit"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/subjectText"
+        app:layout_constraintTop_toBottomOf="@+id/Spinnerid" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintLeft_toRightOf="@+id/nametext"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectText" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintStart_toEndOf="@+id/emailtext"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toEndOf="@+id/adharno"
+        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/complaint"
+        app:layout_constraintTop_toBottomOf="@+id/editText8"
+        app:layout_constraintVertical_bias="0.094" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
