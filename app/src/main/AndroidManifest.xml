@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".filedComplain"></activity>
+        <activity android:name=".Police_final_main"></activity>
+        <activity
+            android:name=".Police_main_page"
+            android:label="@string/title_activity_police_main_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".filedComplain" />
         <activity android:name=".fileComplaint" />
         <activity android:name=".Victim_main_page" />
         <activity android:name=".Option" />
