@@ -38,7 +38,7 @@ public class VictimLogin extends AppCompatActivity {
 
     private void validate(String userName,String userPassword)
     {
-        if((userName.equals("thiru") && userPassword.equals("12345")))
+        if((userName.equals("admin") && userPassword.equals("12345")))
         {
             Intent intent = new Intent(VictimLogin.this,Victim_main_page.class);
             //Intent is used to move from one activity to another
